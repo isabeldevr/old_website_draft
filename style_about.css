@@ -1,0 +1,284 @@
+body, html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     font-family: 'Courier New', Courier New;
+}
+
+section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.wrapper {
+     min-height: 100vh;
+     background-image: url('images/about_background.jpg');
+     background-size: cover;
+}
+
+footer, section {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+
+h1 {
+     font-size: 45px;
+     color: black;
+     text-align: center;
+     font-weight: normal;
+     margin: 0; 
+     padding-top: 130px;
+}
+
+/* navigation bar */
+nav {
+     background-color: white;
+     width: 100%;
+     height: 100px;
+     position: fixed;
+     top: 0;
+     z-index: 1000;
+}
+ 
+.nav-menu {
+     list-style: none;
+     margin: 0;
+     position: absolute;
+     top: 0; 
+     width: 100%;
+     flex: auto;
+}
+ 
+.nav-menu li {
+     display: inline-block;
+}
+
+.nav-menu li a {
+     text-decoration: none;
+     color: black;
+     font-size: 18px;
+     padding: 1rem;
+     line-height: 100px;
+}
+ 
+ul li a:hover {
+     color: grey; /* Change color on hover */
+}
+
+em {
+     color: black;
+     font-weight: bold;
+}
+
+/* ABOUT */
+div.about {
+     float: left;
+     margin: 30px;
+     width: 300px;
+     height: 300px;
+     border: 20px solid #ccc;
+     padding: 30px;
+     text-align: justify; 
+     line-height: 1.3 ;
+}
+
+div#first {
+     background-color: pink;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     border: 1px solid rgb(238, 186, 195);
+     border-radius: 5px;
+     transform: perspective(0.5px);
+}
+
+div#second{
+     background-color: lightgoldenrodyellow;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     border: 1px solid rgb(255, 255, 192);
+     border-radius: 5px;
+     transform: perspective(0.5px);
+}
+
+div#third {
+     background-color: rgb(192, 235, 249);
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     border: 1px solid rgb(159, 210, 227);
+     border-radius: 5px;
+     transform: perspective(0.5px);
+}
+
+div#fourth {
+     background-color: #dad1f6;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     border: 1px solid #c3b7e8;
+     border-radius: 5px;
+     transform: perspective(0.5px);
+     text-align: center;
+     line-height: 1.7;
+}
+
+/* MY CV */
+
+.mycv {
+     height: 100vh;
+     background-color : #333;
+     height: auto;
+     padding: 20px 20px 30px 30px;
+}
+
+h2 {
+     margin-top: 100px;
+     font-size: 50px;
+     color: white;
+     text-align: center;
+     font-weight: normal;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+     font-size: 30px;
+     color: white;
+     text-align: center;
+     font-weight: normal;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper-cv {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding: 20px 20px;
+}
+
+.col {
+     float: left;
+     flex-basis: calc(33% - 20px); 
+}
+
+.cv-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+
+.cv-list li {
+     box-shadow: #ccc 0 0 5px;
+     text-align: center;
+     border-radius: 2px;
+     background-color: rgb(255, 255, 255);
+     padding: 20px 20px;
+     margin: 0 0 5px 0;
+     position: relative; /* Establish positioning context */
+     transition: background 2s, transform 0.5s; /* Move the transition to the main selector */
+     z-index: 1; 
+}
+
+
+.cv-list li::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0; /* Start gradient from left edge */
+     width: 0;
+     height: 100%;
+     background: linear-gradient(to right, transparent 0%, rgb(255, 255, 255) 100%);
+     transition: width 0.5s; /* Transition the left position */
+}
+
+.cv-list li:hover::before {
+     width: 100%; /* Move gradient to the right edge */;
+}
+
+.cv-list li:hover {
+     background: #f4f4f4;
+     transform: scale(1.05);
+     transition: background 2s, transform 0.5s;
+}
+
+textarea:focus {
+     outline: none;
+}
+
+/* INTRO */
+.intro {
+     background-image: url('images/about_me.png');
+     background-size: cover;
+     height: 100vh;
+     rotate: 0.7;
+}
+
+h5 {
+     font-size: 50px;
+     color: white;
+     font-weight: normal;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+ 
+
+/* FOOTER */
+
+
+/* FOOTER */
+
+footer {
+     background-color: white;
+     width: 100%;
+     height: auto;
+     padding: 20px 20px 30px 30px;
+}
+ 
+.social-icons {
+     display: flex;
+}
+ 
+.social-icons a {
+     color: black;
+     margin: auto 10px;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+.social-icons a:hover {
+     color: grey;
+}
+
+
+.footer-columns {
+     display: flex;
+     justify-content: space-around;
+     margin: 20px 720px;
+}
+
+.footer-links ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+.footer-links li {
+     display: inline-block;
+     margin-left: 0;
+}
+
+.footer-links li a {
+     color: black;
+     text-decoration: none;
+     line-height: 2;
+}
+
+.footer-bottom {
+     margin-bottom: 20px;
+     font-size: 12px;
+}
+
+
+

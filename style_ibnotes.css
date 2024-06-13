@@ -1,0 +1,362 @@
+section, footer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: 100%;
+}
+
+.circle-container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-height: 120px; 
+     position: relative;
+     top: 120px;
+}
+ 
+.circle {
+     background-color: white;
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center; /* Align horizontally */
+     align-items: center;
+     margin-bottom: 10px; /* Adjust as needed for spacing between circles */
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Courier New', Courier New;
+     color: black;
+     background-image: url('images/ib_background.png');
+     background-size: cover;
+     align-items: center;
+}
+
+h1 {
+     font-size: 45px;
+     color: black;
+     text-align: center;
+     font-weight: normal;
+     margin: 0; 
+     padding-top: 130px;
+}
+
+.intro-p, .intro-p2 {
+     text-align: center;
+}
+
+.intro-p2{
+     font-style: italic;
+}
+
+nav {
+     background-color: white;
+     width: 100%;
+     height: 100px;
+     position: fixed;
+     z-index: 1000;
+     top: 0;
+}
+ 
+.nav-menu {
+     list-style: none;
+     margin: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+ 
+.nav-menu li {
+     list-style: none;
+     display: inline-block;
+}
+ 
+.nav-menu li a {
+     text-decoration: none;
+     color: black;
+     font-size: 18px;
+     padding: 1rem;
+     line-height: 100px;
+}
+ 
+ul a:hover {
+     color: grey; 
+}
+
+
+.container {
+     padding: 17px 470px;
+     text-align: center;
+}
+
+.D1 {
+     margin: 10px; 
+     background-color: lightskyblue;
+     width: 350px;
+     height: 450px; /* Increased height to accommodate caption */
+     overflow: hidden;
+     position: relative; 
+     float: left;
+}
+
+.D1 img {
+     width: 100%;
+     height: auto;
+     display: block; /* Ensures no extra space below the image */
+}
+
+.caption {
+     position: absolute; /* Position the caption absolute within the .D1 container */
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+     padding: 0.5rem;
+     box-sizing: border-box; /* Include padding in the width calculation */
+     text-align: center;
+     font-size: 1.2rem;
+     line-height: 1.5;
+}
+
+.caption, .caption2, .caption3, .caption4 {
+     color: black;
+}
+
+#popup-box-math, 
+#popup-box-econ,
+#popup-box-physics,
+#popup-box-global-politics {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(246, 246, 246, 0.7);
+     background-size: cover;
+     transition: all 0.4s;
+     visibility: hidden;
+     opacity: 0;
+     z-index: 999;
+}
+
+#popup-box-math:target,
+#popup-box-econ:target,
+#popup-box-physics:target,
+#popup-box-global-politics:target {
+     visibility: visible;
+     opacity: 1;
+}
+
+.popup-container {
+     background-color: white;
+     border-radius: 10px;
+     padding: 20px;
+     text-align: center;
+     width: 500px;
+     height: 500px;
+     position: relative;
+}
+
+.popup-close-button{
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     cursor: pointer;
+     text-decoration: none;
+}
+
+
+.D2 {
+     margin: 10px; 
+     background-color: lightskyblue;
+     width: 350px;
+     height: 450px; /* Increased height to accommodate caption */
+     overflow: hidden;
+     position: relative; 
+     float: right;
+}
+
+.D2 img {
+     width: 100%;
+     height: auto;
+     display: block; /* Ensures no extra space below the image */
+}
+
+.caption2 {
+     position: absolute; /* Position the caption absolute within the .D1 container */
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+     padding: 0.5rem;
+     box-sizing: border-box; /* Include padding in the width calculation */
+     text-align: center;
+     font-size: 1.2rem;
+     line-height: 1.5;
+}
+
+
+.D3 {
+     margin: 10px; 
+     background-color: lightskyblue;
+     width: 350px;
+     height: 450px; /* Increased height to accommodate caption */
+     overflow: hidden;
+     position: relative; 
+     float: left;
+}
+
+.D3 img {
+     width: 100%;
+     height: auto;
+     display: block; /* Ensures no extra space below the image */
+}
+
+.caption3 {
+     position: absolute; /* Position the caption absolute within the .D1 container */
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+     padding: 0.5rem;
+     box-sizing: border-box; /* Include padding in the width calculation */
+     text-align: center;
+     font-size: 1.2rem;
+     line-height: 1.5;
+}
+
+.D4 {
+     margin: 10px; 
+     background-color: lightskyblue;
+     width: 350px;
+     height: 450px; /* Increased height to accommodate caption */
+     overflow: hidden;
+     position: relative; 
+     float: right;
+}
+
+.D4 img {
+     width: 100%;
+     height: auto;
+     display: block; /* Ensures no extra space below the image */
+}
+
+.caption4 {
+     position: absolute; /* Position the caption absolute within the .D1 container */
+     bottom: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+     padding: 0.5rem;
+     box-sizing: border-box; /* Include padding in the width calculation */
+     text-align: center;
+     font-size: 1.2rem;
+     line-height: 1.5;
+}
+
+.D1, .D2, .D3, .D4 {
+     margin-top: 25px;
+}
+
+.D1:hover, .D2:hover, .D3:hover, .D4:hover {
+     transform: scale(1.1);
+     transition: 0.5s;
+}
+
+
+.modal {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(246, 246, 246, 0.7);
+     background-size: cover;
+     transition: all 0.4s;
+     visibility: hidden;
+     opacity: 0;
+     z-index: 999;
+}
+
+.modal:target {
+     visibility: visible;
+     opacity: 1;
+}
+
+.popup-container {
+     background-color: white;
+     border-radius: 10px;
+     padding: 20px;
+     text-align: center;
+     width: 500px;
+     height: 500px;
+     position: relative;
+}
+
+.popup-close-button{
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     cursor: pointer;
+     text-decoration: none;
+}
+
+
+footer {
+     background-color: white;
+     width: 100%;
+     height: auto;
+     padding: 20px 20px 30px 30px;
+}
+ 
+.social-icons {
+     display: flex;
+}
+ 
+.social-icons a {
+     color: black;
+     margin: auto 10px;
+     text-decoration: none;
+     font-size: 20px;
+}
+ 
+.social-icons a:hover {
+     color: grey;
+}
+
+.footer-columns {
+     display: flex;
+     justify-content: space-around;
+     margin: 20px 720px;
+}
+
+.footer-links ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+.footer-links li{
+     display: inline-block;
+     margin-left: 0;
+}
+
+.footer-links li a {
+     color: black;
+     text-decoration: none;
+     line-height: 2;
+
+}
+.footer-bottom {
+     margin-bottom: 20px;
+     font-size: 12px;
+}
